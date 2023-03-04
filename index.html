@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Animation Example</title>
+  </head>
+  <style>
+    .blob {
+      position: absolute;
+      top: 140px;
+      left: 50px;
+      animation-name: moveBox;
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      animation-play-state: running;
+    }
+
+    @keyframes moveBox {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(-50px, -150px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+  <body>
+    <div class="blob">
+      <svg
+        width="454"
+        height="285"
+        viewBox="0 0 454 285"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M274 132C274 210.424 325.514 284.285 243.5 284.285C161.486 284.285 95 220.709 95 142.285C95 63.8601 161.486 0.284561 243.5 0.284561C325.514 0.284561 274 53.5756 274 132Z"
+          fill="#D9D9D9"
+        >
+          <animate
+            attributeName="d"
+            dur="5s"
+            repeatCount="indefinite"
+            values="M274 132C274 210.424 325.514 284.285 243.5 284.285C161.486 284.285 95 220.709 95 142.285C95 63.8601 161.486 0.284561 243.5 0.284561C325.514 0.284561 274 53.5756 274 132Z;
+
+        M332 124C332 202.424 325.514 284 243.5 284C161.486 284 98 219.424 98 141C98 62.5755 128.986 57 211 57C293.014 57 332 45.5756 332 124Z;
+
+        M396 102C396 180.424 325.014 229 243 229C160.986 229 42 187.424 42 109C42 30.5756 128.64 45 210.654 45C292.669 45 396 23.5756 396 102Z;
+
+        M454 93C454 171.424 313.014 137 231 137C148.986 137 0 185.424 0 107C0 28.5756 128.64 45 210.654 45C292.669 45 454 14.5756 454 93Z;
+
+        M396 102C396 180.424 325.014 229 243 229C160.986 229 42 187.424 42 109C42 30.5756 128.64 45 210.654 45C292.669 45 396 23.5756 396 102Z;
+
+        M332 124C332 202.424 325.514 284 243.5 284C161.486 284 98 219.424 98 141C98 62.5755 128.986 57 211 57C293.014 57 332 45.5756 332 124Z;
+
+        M274 132C274 210.424 325.514 284.285 243.5 284.285C161.486 284.285 95 220.709 95 142.285C95 63.8601 161.486 0.284561 243.5 0.284561C325.514 0.284561 274 53.5756 274 132Z;
+        "
+          />
+        </path>
+      </svg>
+    </div>
+  </body>
+</html>
